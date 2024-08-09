@@ -10,3 +10,4 @@ def commit():
 
 def close():
     conexao.close()
+

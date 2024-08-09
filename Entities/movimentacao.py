@@ -1,4 +1,4 @@
-import cadastro
+import Entities.remedio as remedio
 class Movimentacao:
     def reduzEstoque(self, quantidadeReduzida):
         self.quantidadeReduzida = quantidadeReduzida
@@ -11,7 +11,7 @@ class Movimentacao:
         return self.quantidadeDoProduto
 
     def geraNotaFiscal(self, nomeRemedio, precoVenda, data, hora): 
-        cadastrar = cadastro.Remedio(nomeRemedio, precoVenda)
+        cadastrar = remedio.Remedio(nomeRemedio, precoVenda)
         return cadastrar.nomeRemedio, cadastrar.precoVenda, data, hora, self.quantidadeDoProduto
         
     #def registraEntrada(self, nomeFornecedor): #
